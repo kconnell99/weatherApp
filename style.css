@@ -1,7 +1,13 @@
-.bg {
-    background-color: lightblue;
+html {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+
 }
 
-.font {
-    font-family: "Courier New", Courier, monospace;
+body {
+    background-size: cover;
+    background-image: url("https://zippy.gfycat.com/UnkemptCapitalIceblueredtopzebra.gif");
+    background-color: #cccccc;
+    min-height: 100%;
+    margin: 0;
 }

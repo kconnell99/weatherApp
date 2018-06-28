@@ -47,8 +47,6 @@
       cityWeather.innerText = 'Current temperature: ' + weather.temperature + "\n" + "Humidity: " + weather.humidity +"\n" + "Precipitation: " + weather.precipType +  "\n" + "Summary: "+weather.summary;
     });
   });
-  var s1 = document.querySelector("#app")
-  s1.classList.add("bg");
 
   var s2 = document.querySelector("#app")
   s2.classList.add("font")
