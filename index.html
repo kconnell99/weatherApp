@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Love+Ya+Like+A+Sister" rel="stylesheet">    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=en"></script>
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
   </head>
   <body>
+    
+
     <div id="app">
-      <h1>Weather App</h1>
-      <div class="main-app">
+        <h1>Weather</h1>
+
         <form class="city-form">
-          <input type="text" class="city-input">
+          <input type="text" class="city-input" id= "autocomplete">
           <button type="submit" class="get-weather-button">Get Weather!</button>
         </form>
         <div class="city-weather">
@@ -18,6 +22,85 @@
         </div>
       </div>
     </div>
+    <footer id = "forecast">
+        <div id = "footer-title"></div>
+        <canvas class = "icon hidden" id="icon1" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon2" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon3" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon4" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon5" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon6" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon7" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon8" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon9" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon10" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon11" width="128" height="128"></canvas>
+
+          <canvas class = "icon hidden" id="icon12" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon13" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon14" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon15" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon16" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon17" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon18" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon19" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon20" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon21" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon22" width="128" height="128"></canvas>
+
+          <canvas class = "icon hidden" id="icon23" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon24" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon25" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon26" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon27" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon28" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon29" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon30" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon31" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon32" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon33" width="128" height="128"></canvas>
+
+          <canvas class = "icon hidden" id="icon34" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon35" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon36" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon37" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon38" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon39" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon40" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon41" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon42" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon43" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon44" width="128" height="128"></canvas>
+
+          <canvas class = "icon hidden" id="icon45" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon46" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon47" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon48" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon49" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon50" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon51" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon52" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon53" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon54" width="128" height="128"></canvas>
+          <canvas class = "icon hidden" id="icon55" width="128" height="128"></canvas>
+      
+        
+        <p class = "forecast-weather"></p>
+          
+
+    </footer>
+    
+    
+    <script>
+      var input = document.getElementById('autocomplete');
+      var autocomplete = new google.maps.places.Autocomplete(input);
+    </script>
+    
+    <script src = "http://code.jquery.com/jquery-1.10.2.js"></script>
+
     <script src="app.js"></script>
+    <script src = "skycons.js"></script>
+
   </body>
+  
 </html>

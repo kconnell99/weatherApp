@@ -1,13 +1,72 @@
-html {
+html, body {
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
-
+    font-family: 'Josefin Slab', serif;
 }
 
 body {
     background-size: cover;
-    background-image: url("https://zippy.gfycat.com/UnkemptCapitalIceblueredtopzebra.gif");
-    background-color: #cccccc;
-    min-height: 100%;
     margin: 0;
+    
+    
+    background-repeat: no-repeat;
+    background-image: url("https://static.tumblr.com/2084798b6998500f4aadcf55992b6064/lldt7gb/U0nofg3n1/tumblr_static_tumblr_static__640.jpg");
+    background-color: #cccccc;
+}
+button{
+    font-family: 'Josefin Slab', serif;
+
+}
+
+.city-form{
+    padding-top: 50px;
+}
+
+
+
+h1{
+    display: block;
+    color: white;
+    font-size: xx-large;
+    font-family: 'Love Ya Like A Sister', cursive;
+    /*
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://data.whicdn.com/images/62732865/large.png");
+    background-color: #cccccc;*/
+    
+    background-color: #a4a6a6;
+    position: relative;
+    margin: 0;
+    padding: 50px
+  }
+
+
+footer {
+    display: block;
+    font-size: xx-large;
+    font-family: 'Love Ya Like A Sister', cursive;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #a4a6a6;
+    /*
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://data.whicdn.com/images/62732865/large.png");
+    background-color: #cccccc;*/
+    padding: 10px;
+    text-align: center;
+}
+.forecast-weather {
+    padding-right: 30px;
+    font-size: large;
+}
+.day {
+    display: inline-block;
+    text-align: left;
+}
+
+.hidden{
+    display: none;
 }
