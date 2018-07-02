@@ -784,6 +784,18 @@
     skycons.add("icon54", Skycons.RAIN);
     skycons.add("icon55", Skycons.FOG);
 
+    skycons.add("icon56", Skycons.PARTLY_CLOUDY_DAY);
+    skycons.add("icon57", Skycons.CLEAR_DAY);
+    skycons.add("icon58", Skycons.CLEAR_NIGHT);
+    skycons.add("icon59", Skycons.PARTLY_CLOUDY_DAY);
+    skycons.add("icon60", Skycons.PARTLY_CLOUDY_NIGHT);
+    skycons.add("icon61", Skycons.CLOUDY);
+    skycons.add("icon62", Skycons.RAIN);
+    skycons.add("icon63", Skycons.SLEET);
+    skycons.add("icon64", Skycons.SNOW);
+    skycons.add("icon65", Skycons.RAIN);
+    skycons.add("icon66", Skycons.FOG);
+
     skycons.play();
 
 

@@ -36,8 +36,10 @@
   var temp = document.querySelector('#forecast');
   var forecastWeather = forecast.querySelector('.forecast-weather')
 
-
-
+  var reload = document.querySelector('.loc');
+  reload.addEventListener('click',function(event){
+    location.reload();
+  });
 
   cityForm.addEventListener('submit', function (event) { // this line changes
     $('.icon').addClass('hidden');
@@ -58,8 +60,13 @@
     getCoordinatesForCity(city) // get the coordinates for the input city
       .then(getCurrentWeather) // get the weather for those coordinates
       .then(function (weather) {
-        cityWeather.innerText = 'Current temperature: ' + weather.currently.temperature + "\n" + "Humidity: " + weather.currently.humidity + "\n" + "Precipitation: " + weather.currently.precipType + "\n" + "Summary: " + weather.currently.summary;
 
+        for(j = 0;j< 11; j++){
+          if(weather.currently.icon==types[j]){
+            $('#current-icon #icon'+(56+j)).removeClass('hidden');
+          }}
+        cityWeather.innerText = 'Current temperature: ' + weather.currently.temperature + "\n" + "Humidity: " + weather.currently.humidity + "\n" + "Precipitation: " + weather.currently.precipType + "\n" + "Summary: " + weather.currently.summary;
+        
 
         for (i = 1; i < 6; i++) {
           var day = document.createElement("span");
