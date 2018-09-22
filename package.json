@@ -1,7 +1,6 @@
 {
-  "name": "weatherApp",
+  "name": "weatherapp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +11,7 @@
     "url": "git+https://github.com/kconnell99/weatherApp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Katie Connell",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kconnell99/weatherApp.git"
@@ -20,5 +19,9 @@
   "homepage": "https://github.com/kconnell99/weatherApp.git",
   "dependencies": {
     "express": "^4.16.3"
-  }
+  },
+  "engines": {
+    "node": "8.11.3"
+  },
+  "description": ""
 }
